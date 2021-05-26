@@ -30,7 +30,7 @@ const Jokes = ({ joke, fetching, error, getRandomJoke }) => {
 					getRandomJoke();
 				}}
 			>
-				give me my pill
+				gimme the pill
 			</button>
 		</div>
 	);
