@@ -12,7 +12,11 @@ const Jokes = ({ joke, fetching, error, getRandomJoke }) => {
 	}, []);
 
 	if (error) {
-		return <div className="error-wrapper"> error</div>;
+		return (
+			<div className="error-wrapper">
+				Ops! Chuck Norris killed the connection.
+			</div>
+		);
 	}
 	if (fetching) {
 		return (

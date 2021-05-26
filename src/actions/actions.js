@@ -9,9 +9,9 @@ export const getRandomJoke = () => {
 		dispatch({ type: FETCHING_JOKE });
 
 		axios
-			.get("http://api.icndb.com/jokes/random")
+			.get("https://api.chucknorris.io/jokes/random")
 			.then((res) => {
-				dispatch({ type: FETCHING_SUCCESS, payload: res.data.value.joke });
+				dispatch({ type: FETCHING_SUCCESS, payload: res.data.value });
 			})
 			.catch((err) => {
 				dispatch({ type: FETCHING_FAILED, payload: JSON.stringify(err) });
