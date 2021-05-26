@@ -1,0 +1,24 @@
+.error-wrapper,
+.fetching-wrapper,
+.joke-wrapper {
+	width: 80%;
+	height: 50%;
+}
+
+.fetching-wrapper img {
+	width: 30px;
+	height: 30px;
+}
+
+.joke-wrapper div {
+	margin: 2%;
+	height: 50%;
+}
+.joke-wrapper button {
+	padding: 10px;
+	border: 1px solid black;
+}
+.joke-wrapper button:hover {
+	transform: scale(1.1);
+	box-shadow: 10px 10px gray;
+}
