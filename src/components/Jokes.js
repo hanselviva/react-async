@@ -21,7 +21,6 @@ const Jokes = ({ joke, fetching, error, getRandomJoke }) => {
 	if (fetching) {
 		return (
 			<div className="fetching-wrapper">
-				{" "}
 				<img src={Spinner} alt="fetching" />
 			</div>
 		);
@@ -34,7 +33,7 @@ const Jokes = ({ joke, fetching, error, getRandomJoke }) => {
 					getRandomJoke();
 				}}
 			>
-				gimme the pill
+				💊 gimme the pill 💊
 			</button>
 		</div>
 	);

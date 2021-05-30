@@ -1,8 +1,16 @@
 .error-wrapper,
 .fetching-wrapper,
 .joke-wrapper {
-	width: 80%;
-	height: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* */
+	background-color: cornsilk;
+	border: 3px solid black;
+	box-shadow: 20px 20px black;
+	height: 40vh;
+	width: 50vw;
 }
 
 .fetching-wrapper img {
@@ -11,7 +19,7 @@
 }
 
 .joke-wrapper div {
-	margin: 2%;
+	margin: 2% 10%;
 	height: 50%;
 }
 .joke-wrapper button {
@@ -20,5 +28,22 @@
 }
 .joke-wrapper button:hover {
 	transform: scale(1.1);
-	box-shadow: 10px 10px gray;
+	box-shadow: 8px 10px black;
+	transition-delay: 0.1s;
+}
+
+@media only screen and (max-width: 640px) and (max-height: 1136px) {
+	/* Styles here */
+	.error-wrapper,
+	.fetching-wrapper,
+	.joke-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		/* */
+		background-color: cornsilk;
+		height: 100vh;
+		width: 100vw;
+	}
 }
